@@ -20,7 +20,9 @@ def sum_str(first_str: str, second_str: str) -> str:
     :return: результат склеивания
     """
 
-    return None
+    summ = [first_str, second_str]
+    result = f"{' '.join(summ)}"
+    return result
 
 
 if __name__ == '__main__':
