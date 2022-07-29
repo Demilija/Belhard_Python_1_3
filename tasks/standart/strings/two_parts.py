@@ -27,7 +27,9 @@ def split_to_parts(str_to_split: str) -> tuple:
     :return: кортеж с двумя частями
     """
 
-    return None
+    part_1 = str_to_split[0:floor(len(str_to_split) / 2)]
+    part_2 = str_to_split[floor(len(str_to_split) / 2):]
+    return part_1, part_2
 
 
 if __name__ == '__main__':

@@ -22,7 +22,10 @@ def tip(bill: str) -> tuple:
     :rtype: tuple
     """
 
-    return None
+    recipt = float(bill) / 100 * 15
+    cash = float(bill) / 100 * 3
+    result = recipt, cash
+    return result
 
 
 if __name__ == '__main__':

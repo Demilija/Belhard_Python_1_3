@@ -34,7 +34,8 @@ def print_recipe() -> str:
     :rtype: str
     """
 
-    return None
+    result = f"Рецепт {TITLE}:\n" + ",\n".join(RECIPE)
+    return result
 
 
 if __name__ == '__main__':

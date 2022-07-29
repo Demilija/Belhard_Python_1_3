@@ -26,7 +26,8 @@ def str_sum(str1: str, str2: str) -> int:
     :rtype: int
     """
 
-    return None
+    result = int(str1) + int(str2)
+    return result
 
 
 if __name__ == '__main__':
