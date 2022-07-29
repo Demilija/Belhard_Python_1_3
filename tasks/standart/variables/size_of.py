@@ -7,6 +7,7 @@ getsizeof() возвращает результат в байтах. В одно
 
 Полученный результат округлите до 2 знаков после запятой
 """
+import sys
 from sys import getsizeof
 from typing import Any
 
@@ -19,7 +20,9 @@ def size_in_kb(some_object: Any) -> str:
     :return: стока вида "1.23 кб"
     """
 
-    return None
+    result = sys.getsizeof(some_object) / 1024
+    result_fin = f"{round(result,2)} кб"
+    return result_fin
 
 
 if __name__ == '__main__':
